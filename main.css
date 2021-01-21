@@ -1,0 +1,45 @@
+body {
+    background-color: midnightblue;
+    color: white;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 50px;
+}
+
+ div{
+    padding: 5px;
+ }
+
+section {
+    display: grid;
+    grid-template: "num origin dest depart land";
+    text-align: center;
+}
+
+h3 {
+    border-bottom: 1px solid grey;
+    margin: 0 ;
+}
+
+.num {
+    grid-area: 'num';
+}
+
+.origin {
+    grid-area: 'origin';
+}
+
+.dest {
+    grid-area: 'dest';
+}
+
+.depart {
+    grid-area: 'depart';
+}
+
+.land {
+    grid-area: 'land';
+}

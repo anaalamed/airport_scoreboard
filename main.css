@@ -1,7 +1,7 @@
 body {
     background-color: midnightblue;
     color: white;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -13,15 +13,21 @@ h1{
     padding: 5px;
  }
 
-section {
+section .flight{
     display: grid;
     grid-template: "num origin dest depart land";
     text-align: center;
 }
 
-h3 {
+/* .title  {
+    text-align: center;
     border-bottom: 1px solid grey;
-    margin: 0 ;
+    display: grid;
+    grid-template: "num origin dest depart land";
+} */
+
+h3 {
+    margin: 0 auto;
 }
 
 .num {

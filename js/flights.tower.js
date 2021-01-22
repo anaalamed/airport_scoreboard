@@ -33,16 +33,17 @@ export class FlightsTower {
     }
 
     displayFlights() {
-        let section = document.querySelector('section');
+        let tbody = document.querySelector('tbody');
         this.flights.forEach(flight => {
             flight.on(Flight.LAND, () => {
-                section.innerHTML += `<div class="flight">
-                                                <div class="num"> ${flight.number}</div>
-                                                <div class="origin"> ${flight.origin} </div>
-                                                <div class="dest"> ${flight.destination}</div>
-                                                <div class="depart">${flight.departed}</div>
-                                                <div class="land">${flight.landed}</div>
-                                            </div>`
+                tbody.innerHTML +=
+                        `<tr>
+                                <td>${flight.number}</td>
+                                <td>${flight.origin}</td>
+                                <td>${flight.destination}</td>
+                                <td>${flight.departed}</td>
+                                <td>${flight.landed}</td>
+                        </tr>`
             })
         })
     }

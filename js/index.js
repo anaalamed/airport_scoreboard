@@ -9,8 +9,10 @@ class App {
         console.log('start app');
         this.flightsTower = new FlightsTower();
         let body = document.querySelector('body');
+
+        // need to change setTimeout
         setTimeout(() => {
-            body.innerHTML +=      `<div class="date">Today ${dayjs().format('DD/MM/YYYY HH:mm:ss')}</div>
+            body.innerHTML += `<div class="date">Today ${dayjs().format('DD/MM/YYYY HH:mm:ss')}</div>
                                     <h2>There are ${this.flightsTower.flightCount} flights</h2> 
                                     <h3>There are ${this.flightsTower.flightDest.length} destinations: ${this.flightsTower.flightDest}</h3>
                                     <h2>The flights:</h2>
@@ -29,7 +31,6 @@ class App {
                                                 </tbody>
                                             </table>
                                     </section>`
-
         }, 1000);
     }
 }
@@ -37,6 +38,7 @@ class App {
 let myApp = new App();
 myApp.start();
 
+// need to change!
 setTimeout(() => {
     myApp.flightsTower.departAll();
     myApp.flightsTower.displayFlights();

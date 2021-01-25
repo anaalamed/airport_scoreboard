@@ -26,10 +26,8 @@ export class FlightsTower {
     }
 
     departAll() {
-        console.log('depart all');
-        this.flights.forEach(flight => {
-            flight.depart();
-        })
+        // console.log('depart all');
+        this.flights.forEach(flight => flight.depart() );
     }
 
     displayFlights() {

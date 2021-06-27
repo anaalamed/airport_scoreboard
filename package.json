@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "parcel index.html --open", 
     "dev": "parcel index.html --open"
   },
   "keywords": [],
